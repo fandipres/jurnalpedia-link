@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://bio.jurnalpedia.my.id/sitemap.xml
