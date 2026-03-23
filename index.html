@@ -4,86 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <title>Jurnalpedia - Ensiklopedia dan Komunitas Jurnal</title>
+    <title>Jurnalpedia</title>
     <meta name="description" content="Portal tautan resmi Jurnalpedia. Akses ensiklopedia jurnal, aplikasi Android, database jurnal Indonesia, dan komunitas akademik terpercaya.">
     <link rel="canonical" href="https://bio.jurnalpedia.my.id/" />
     
     <link rel="icon" type="image/png" href="https://yt3.googleusercontent.com/y1gAAo7GMOeDm1l3ZF2Vd3E8LzYEVMPhHXosQD47yBNoC2jjuOr83NpmQH1GYF8nZBvdHhKmEA=s160-c-k-c0x00ffffff-no-rj">
 
-    <meta property="og:title" content="Jurnalpedia - Ensiklopedia dan Komunitas Jurnal">
+    <meta property="og:title" content="Jurnalpedia">
     <meta property="og:description" content="Portal tautan resmi Jurnalpedia. Akses ensiklopedia jurnal, aplikasi Android, database jurnal Indonesia, dan komunitas akademik terpercaya.">
     <meta property="og:image" content="https://yt3.googleusercontent.com/y1gAAo7GMOeDm1l3ZF2Vd3E8LzYEVMPhHXosQD47yBNoC2jjuOr83NpmQH1GYF8nZBvdHhKmEA=s160-c-k-c0x00ffffff-no-rj"> 
     <meta property="og:url" content="https://bio.jurnalpedia.my.id/">
     <meta property="og:type" content="website">
 
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Jurnalpedia - Ensiklopedia dan Komunitas Jurnal">
+    <meta name="twitter:title" content="Jurnalpedia">
     <meta name="twitter:description" content="Portal tautan resmi Jurnalpedia. Akses ensiklopedia jurnal, aplikasi Android, database jurnal Indonesia, dan komunitas akademik terpercaya.">
     <meta name="twitter:image" content="https://yt3.googleusercontent.com/y1gAAo7GMOeDm1l3ZF2Vd3E8LzYEVMPhHXosQD47yBNoC2jjuOr83NpmQH1GYF8nZBvdHhKmEA=s160-c-k-c0x00ffffff-no-rj"> 
     
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
-    <style>
-        :root { --bg-color: #f3f4f6; --text-main: #111827; --text-muted: #6b7280; --card-bg: #ffffff; --card-border: #e5e7eb; --accent-color: #2563eb; --shadow-sm: 0 2px 4px rgba(0,0,0,0.05); --shadow-md: 0 10px 15px -3px rgba(0,0,0,0.1); }
-        [data-theme="dark"] { --bg-color: #111827; --text-main: #f9fafb; --text-muted: #9ca3af; --card-bg: #1f2937; --card-border: #374151; --accent-color: #3b82f6; --shadow-sm: 0 2px 4px rgba(0,0,0,0.3); --shadow-md: 0 10px 15px -3px rgba(0,0,0,0.4); }
-        * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Inter', sans-serif; }
-        body { background-color: var(--bg-color); color: var(--text-main); display: flex; justify-content: center; min-height: 100vh; padding: 2rem 1rem; transition: background-color 0.3s, color 0.3s; }
-        .container { width: 100%; max-width: 500px; display: flex; flex-direction: column; }
-        .top-actions { display: flex; justify-content: flex-end; gap: 10px; margin-bottom: 1.5rem; }
-        .icon-btn { background: var(--card-bg); border: 1px solid var(--card-border); color: var(--text-main); width: 44px; height: 44px; border-radius: 50%; display: flex; align-items: center; justify-content: center; cursor: pointer; box-shadow: var(--shadow-sm); font-size: 1.1rem; transition: transform 0.2s; }
-        .icon-btn:active { transform: scale(0.95); }
-        .bento-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; width: 100%; }
-        
-        .bento-card { background-color: var(--card-bg); border: 1px solid var(--card-border); border-radius: 24px; padding: 20px; text-decoration: none; color: var(--text-main); display: flex; flex-direction: column; justify-content: flex-start; box-shadow: var(--shadow-sm); transition: transform 0.2s, box-shadow 0.2s; position: relative; overflow: hidden; }
-        
-        .bento-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-md); }
-        .span-2 { grid-column: span 2; }
-        .profile-card { align-items: center; text-align: center; padding: 30px 20px; }
-        .profile-img { width: 80px; height: 80px; border-radius: 50%; object-fit: cover; margin-bottom: 12px; border: 3px solid var(--card-border); }
-        .profile-card h1 { font-size: 1.25rem; font-weight: 700; margin-bottom: 4px; }
-        .profile-card p { font-size: 0.85rem; color: var(--text-muted); }
-        .link-card i { font-size: 1.8rem; margin-bottom: 16px; color: var(--accent-color); }
-        
-        .wa-icon { color: #25D366 !important; }
-
-        .link-card h2 { font-size: 1rem; font-weight: 600; margin-bottom: 4px; }
-        .link-card p { font-size: 0.8rem; color: var(--text-muted); }
-        .product-section h2 { font-size: 1.1rem; margin-bottom: 15px; color: var(--text-main); display: flex; align-items: center; gap: 8px; }
-        .product-list { display: flex; flex-direction: column; gap: 12px; }
-        .product-item { display: flex; align-items: center; justify-content: space-between; padding: 12px; background-color: var(--bg-color); border-radius: 12px; text-decoration: none; color: var(--text-main); transition: transform 0.2s, background-color 0.2s; }
-        .product-item:hover { transform: scale(1.02); background-color: var(--card-border); }
-        .product-info { display: flex; align-items: center; gap: 12px; }
-        .product-icon { width: 40px; height: 40px; border-radius: 8px; background-color: var(--accent-color); color: #ffffff; display: flex; align-items: center; justify-content: center; font-size: 1.1rem; }
-        .product-text h3 { font-size: 0.95rem; font-weight: 600; margin-bottom: 2px; }
-        .product-text p { font-size: 0.8rem; color: var(--text-muted); }
-        .social-card { display: flex; flex-direction: row; justify-content: space-around; align-items: center; padding: 20px; }
-        .social-link { color: var(--text-main); font-size: 1.5rem; transition: color 0.2s, transform 0.2s; }
-        .social-link:hover { color: var(--accent-color); transform: scale(1.1); }
-        .footer { margin-top: 2rem; text-align: center; color: var(--text-muted); font-size: 0.8rem; }
-
-        @media (max-width: 480px) {
-            body { padding: 1.5rem 0.75rem; }
-            .bento-grid { gap: 12px; }
-            .bento-card { padding: 15px; border-radius: 20px; }
-            .profile-card { padding: 20px 15px; }
-            .profile-img { width: 70px; height: 70px; }
-            .link-card i { font-size: 1.5rem; margin-bottom: 12px; }
-            .link-card h2 { font-size: 0.9rem; }
-            .link-card p { font-size: 0.75rem; }
-            .product-item { padding: 10px; }
-            .product-icon { width: 36px; height: 36px; font-size: 1rem; }
-            .product-text h3 { font-size: 0.85rem; }
-            .product-text p { font-size: 0.75rem; }
-            .social-card { padding: 15px; }
-            .social-link { font-size: 1.3rem; }
-        }
-    </style>
+    
+    <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
 
     <div class="container">
-        
         <div class="top-actions">
             <button class="icon-btn" id="themeToggle" aria-label="Toggle Dark Mode">
                 <i class="fa-solid fa-moon"></i>
@@ -94,11 +39,10 @@
         </div>
 
         <div class="bento-grid">
-            
             <div class="bento-card profile-card span-2">
                 <img src="https://yt3.googleusercontent.com/y1gAAo7GMOeDm1l3ZF2Vd3E8LzYEVMPhHXosQD47yBNoC2jjuOr83NpmQH1GYF8nZBvdHhKmEA=s160-c-k-c0x00ffffff-no-rj" alt="Logo Jurnalpedia" class="profile-img">
                 <h1>Jurnalpedia</h1> 
-                <p>Semua yang perlu kamu tahu tentang dunia perjurnalan. Salam #PejuangJurnal.</p>
+                <p>Semua yang perlu kamu tahu tentang dunia perjurnalan.<br> Salam #PejuangJurnal.</p>
             </div>
 
             <a href="https://www.jurnalpedia.my.id" class="bento-card link-card span-2" target="_blank" rel="noopener noreferrer">
@@ -121,7 +65,7 @@
                 <i class="fa-solid fa-users"></i>
                 <div>
                     <h2>Komunitas</h2> 
-                    <p>Gabung diskusi & jejaring di grup Facebook</p>
+                    <p>Gabung diskusi jurnal bareng</p>
                 </div>
             </a>
 
@@ -152,7 +96,6 @@
             <div class="bento-card span-2 product-section">
                 <h2><i class="fa-solid fa-box-open"></i> Layanan & Produk Kami</h2> 
                 <div class="product-list">
-                    
                     <a href="https://lynk.id/fanblog/zommzvxz33ov" class="product-item" target="_blank" rel="noopener noreferrer">
                         <div class="product-info">
                             <div class="product-icon"><i class="fa-solid fa-book-bookmark"></i></div>
@@ -174,56 +117,18 @@
             </div>
 
         </div>
+        
         <div class="footer">
-            <p>Copyright &copy; <span id="year">2026</span> - Jurnalpedia</p>
+            <div class="footer-links">
+                <a href="/privacy-policy/">Kebijakan Privasi</a>
+                <a href="/disclaimer/">Penyangkalan</a>
+                <a href="/terms-conditions/">Syarat dan Ketentuan</a>
+            </div>
+            <p class="footer-copyright">Copyright © <span id="year">2026</span> - Jurnalpedia</p>
         </div>
 
     </div>
 
-    <script>
-        document.getElementById('year').textContent = new Date().getFullYear();
-        const themeToggle = document.getElementById('themeToggle');
-        const themeIcon = themeToggle.querySelector('i');
-        const htmlElement = document.documentElement;
-        const savedTheme = localStorage.getItem('theme');
-        if (savedTheme) {
-            htmlElement.setAttribute('data-theme', savedTheme);
-            updateThemeIcon(savedTheme);
-        } else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-            htmlElement.setAttribute('data-theme', 'dark');
-            updateThemeIcon('dark');
-        }
-        themeToggle.addEventListener('click', () => {
-            const currentTheme = htmlElement.getAttribute('data-theme');
-            const newTheme = currentTheme === 'light' ? 'dark' : 'light';
-            htmlElement.setAttribute('data-theme', newTheme);
-            localStorage.setItem('theme', newTheme);
-            updateThemeIcon(newTheme);
-        });
-        function updateThemeIcon(theme) {
-            if (theme === 'dark') {
-                themeIcon.classList.replace('fa-moon', 'fa-sun');
-            } else {
-                themeIcon.classList.replace('fa-sun', 'fa-moon');
-            }
-        }
-        const shareBtn = document.getElementById('shareBtn');
-        shareBtn.addEventListener('click', async () => {
-            if (navigator.share) {
-                try {
-                    await navigator.share({
-                        title: 'Jurnalpedia - Ensiklopedia dan Komunitas Jurnal',
-                        text: 'Temukan semua kanal resmi Jurnalpedia di sini!',
-                        url: window.location.href
-                    });
-                } catch (err) {
-                    console.log('Share canceled:', err);
-                }
-            } else {
-                navigator.clipboard.writeText(window.location.href);
-                alert('Tautan disalin ke clipboard!');
-            }
-        });
-    </script>
+    <script src="assets/script.js"></script>
 </body>
 </html>
